@@ -25,3 +25,10 @@ $ git commit -m "" #inside quotes can say comment about changes/file contents
 
 $ git push
 
+## Checking Work
+
+Make a pull request 
+<img width="145" alt="Screenshot 2024-02-10 at 5 07 29 PM" src="https://github.com/priyalpatell/MLFinalProject/assets/93696664/22121220-5ea8-4e79-bdeb-b5c979323274">
+From your branch to main branch
+
+Include in description: what your task was and files you changed/added
