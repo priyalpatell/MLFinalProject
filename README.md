@@ -5,11 +5,11 @@ We want to predict the when the next UFO sighting will be and where in Californi
 
 ### Make a new branch: 
 
-$ git checkout -b <branchname>
+$ git checkout -b (branchname)
 
 ### Clone (duplicate) a branch:
 
-$ git clone -b <branchname> <remote-repo-url>
+$ git clone -b (branchname) (remote-repo-url)
 
 ### Get new changes from github:
 
@@ -19,7 +19,7 @@ $ git pull
 
 note: make sure to first pull any new changes before uploading your changes
 
-$ git add <filename/pathtofile>
+$ git add (filename/pathtofile)
 
 $ git status #check if green
 
