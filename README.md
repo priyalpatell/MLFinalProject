@@ -19,7 +19,7 @@ $ git pull
 
 note: make sure to first pull any new changes before uploading your changes
 
-$ git add (filename/pathtofile)
+$ git add (filenameORpathtofile)
 
 $ git status #check if green
 
