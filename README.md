@@ -1,6 +1,9 @@
 # MLFinalProject
 We want to predict the when the next UFO sighting will be and where in California it will take place
 
+## Our Plan
+https://docs.google.com/document/d/1k4_IpIC8IPfEdhbPy6gOxikQjhcO_cDI7SLa1fZwNWQ/edit?usp=sharing
+
 ## Git Command Basics
 
 ### Make a new branch: 
