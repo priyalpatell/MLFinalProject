@@ -6,9 +6,11 @@ https://docs.google.com/document/d/1k4_IpIC8IPfEdhbPy6gOxikQjhcO_cDI7SLa1fZwNWQ/
 
 ## Git Clone Remote Respository Error
 Error: If Git - remote: Repository not found
-Solution:
-Generate a personal access token in github settings
+
+Solution: Generate a personal access token in github settings > developer settings > personal access tokens
+
 Add person access token to your https clone url link
+
 $ git clone https://(personalaccesstoken)github.com/priyalpatell/MLFinalProject.git
 
 
