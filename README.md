@@ -15,8 +15,10 @@ $ git checkout -b (branchname)
 $ git clone -b (branchname) (remote-repo-url)
 
 ### Get new changes from github:
-
-$ git pull 
+Option 1:
+$ git fetch #gets new changes but doesn't affect your current changes
+Option 2: 
+$ git pull #gets new changes and does affect your current changes
 
 ### Upload your changes to github:
 
