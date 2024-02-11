@@ -22,7 +22,7 @@ $ git fetch #gets new changes but doesn't affect your current changes
 
 Option 2: 
 
-$ git pull #gets new changes and does affect your current changes
+$ git pull #gets new changes and could affect your current changes if conflicts occur
 
 ### Upload your changes to github:
 
