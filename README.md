@@ -26,7 +26,7 @@ $ git pull #gets new changes and could affect your current changes if conflicts 
 
 ### Upload your changes to github:
 
-note: make sure to first pull any new changes before uploading your changes
+note: make sure to first get any new changes before uploading your changes
 
 $ git add (filenameORpathtofile)
 
