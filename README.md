@@ -17,6 +17,8 @@ $ git pull
 
 ### Upload your changes to github:
 
+note: make sure to first pull any new changes before uploading your changes
+
 $ git add <filename/pathtofile>
 
 $ git status #check if green
