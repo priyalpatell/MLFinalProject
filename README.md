@@ -9,7 +9,7 @@ Error: If Git - remote: Repository not found
 
 Solution: Generate a personal access token in github settings > developer settings > personal access tokens
 
-Add person access token to your https clone url link
+Add personal access token to your clone https url link
 
 $ git clone https://(personalaccesstoken)github.com/priyalpatell/MLFinalProject.git
 
