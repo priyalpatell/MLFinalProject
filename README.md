@@ -1,4 +1,5 @@
 # MLFinalProject
+## Our Goal
 We wanted to predict the when the next UFO sighting will be in California and where in California it will take place from latitude and longitude values.
 
 ## Our Plan
