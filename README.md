@@ -20,9 +20,9 @@ Example:
     
   Input of year = 2
   
-    question 1 ~8 minutes
+    question 1 ~16 minutes
     
-    question 2 ~16 minutes
+    question 2 ~9 minutes
 
 ### Git Clone Remote Respository Error
 Error: If Git - remote: Repository not found
