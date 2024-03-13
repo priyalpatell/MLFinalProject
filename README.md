@@ -7,7 +7,7 @@ https://docs.google.com/document/d/1k4_IpIC8IPfEdhbPy6gOxikQjhcO_cDI7SLa1fZwNWQ/
 
 ## View Our Code
 Importing Keras Tends to Crash Jupyter Notebook, so please view our code from this google colab link instead
-https://colab.research.google.com/drive/1c2NqGPVRiR_gml6zA_5OqsQruIxX2qNP?usp=sharing
+https://colab.research.google.com/drive/1LkhfuaI1NOLcgpFoup_GG5OF2Zsy6dzQ?usp=sharing
 
 ## Running Our UI
 $ streamlit run project_code_ui.py
