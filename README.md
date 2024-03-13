@@ -5,6 +5,17 @@ We wanted to predict the when the next UFO sighting will be in California and wh
 ## Our Plan
 https://docs.google.com/document/d/1k4_IpIC8IPfEdhbPy6gOxikQjhcO_cDI7SLa1fZwNWQ/edit?usp=sharing
 
+## Running our UI
+$ streamlit run project_code_ui.py
+Note: takes a bit of time to load results
+Example:
+  Input of year = 1
+    question 1 ~8 minutes
+    question 2 ~9 minutes
+  Input of year = 2
+    question 1 ~8 minutes
+    question 2 ~16 minutes
+
 ### Git Clone Remote Respository Error
 Error: If Git - remote: Repository not found
 
