@@ -267,17 +267,9 @@ ufo['datetime_min'] = ufo['datetime'].dt.minute.astype(int)
 # Drop the original 'datetime', 'date_posted', 'comments', 'duration (hours/min)' columns
 ufo = ufo.drop(columns=['datetime','date_posted','comments','duration (hours/min)', 'state', 'country'], axis=1)
 
-# %% [markdown]
-# ### **Reducing Shape Column Complexity**
 
-# %%
-#Visualizing the most frequently observed UFO shape
-plt.figure(figsize=(11, 6))
-sns.countplot(y='shape', data=ufo, palette='viridis')
-plt.xlabel('UFO Shape')
-plt.ylabel('Count')
-plt.title('Types of UFO Seen')
-plt.show()
+
+
 
 # %%
 # Reduce Shape Complexity By Grouping Values
@@ -314,29 +306,7 @@ ufo['duration_second'] = ufo['duration_second'].astype('float64')
 #Create list with columns dtype object
 object_col = [x for x in ufo.columns if ufo[x].dtype == 'object']
 
-# %%
-# Correlation columns
-plt.figure(figsize=(12, 5))
-sns.heatmap(ufo.select_dtypes(include=['int64', 'float64']).corr(), annot=True)
-plt.title('Correlation with Numerical Columns')
-plt.show()
 
-# %%
-#Plot histograms of columns
-ufo.hist(figsize=(15, 15))
-plt.show()
-
-# %%
-hold = ufo.plot(
-    kind='box', 
-    subplots=True, 
-    sharey=False, 
-    figsize=(10, 6)
-)
- 
-# increase spacing between subplots
-plt.subplots_adjust(wspace=2) 
-plt.show()
 
 # %% [markdown]
 # ### **Encoding Columns**
@@ -364,53 +334,9 @@ X_train, X_test, y_train_latitude, y_test_latitude, y_train_longitude, y_test_lo
 mms = MinMaxScaler()
 X = mms.fit_transform(X)
 
-# %% [markdown]
-# ### **Model 1: Gradient Boosting Regressor**
 
-# %%
-# Train the models
-gb_latitude = GradientBoostingRegressor()
-gb_latitude.fit(X_train, y_train_latitude)
 
-gb_longitude = GradientBoostingRegressor()
-gb_longitude.fit(X_train, y_train_longitude)
 
-# Make predictions
-y_pred_latitude_hgb = gb_latitude.predict(X_test)
-y_pred_longitude_hgb = gb_longitude.predict(X_test)
-
-# %%
-# Cross Validation
-cv_results = cross_val_score(gb_latitude, X_train, y_train_latitude, cv=5, scoring='r2')
-print("Latitude Cross Validation Scores: ", cv_results)
-print("Average CV Score: ", cv_results.mean())
-cv_results = cross_val_score(gb_longitude, X_train, y_train_longitude, cv=5, scoring='r2')
-print("Longitude Cross Validation Scores: ", cv_results)
-print("Average CV Score: ", cv_results.mean())
-
-# %% [markdown]
-# ### **Model 2: Histogram Gradient Boosting Regressor**
-
-# %%
-# Train the models
-hgb_latitude = HistGradientBoostingRegressor()
-hgb_latitude.fit(X_train, y_train_latitude)
-
-hgb_longitude = HistGradientBoostingRegressor()
-hgb_longitude.fit(X_train, y_train_longitude)
-
-# Make predictions
-y_pred_latitude_hgb = hgb_latitude.predict(X_test)
-y_pred_longitude_hgb = hgb_longitude.predict(X_test)
-
-# %%
-# Cross Validation
-cv_results = cross_val_score(hgb_latitude, X_train, y_train_latitude, cv=5, scoring='r2')
-print("Latitude Cross Validation Scores: ", cv_results)
-print("Average CV Score: ", cv_results.mean())
-cv_results = cross_val_score(hgb_longitude, X_train, y_train_longitude, cv=5, scoring='r2')
-print("Longitude Cross Validation Scores: ", cv_results)
-print("Average CV Score: ", cv_results.mean())
 
 # %% [markdown]
 # ### **Model 3: Random Forest Regressor**
@@ -474,33 +400,36 @@ rand_search = RandomizedSearchCV(rf, param_distributions=param_grid)
 rand_search.fit(X_train, y_train_latitude)
 
 # Create a variable for the best model
-best_rf = rand_search.best_estimator_
+best_rf1 = rand_search.best_estimator_
 
 # Print the best hyperparameters
 print('Best hyperparameters:',  rand_search.best_params_)
 
-y_pred = best_rf.predict(X_test)
-r2 = r2_score(y_test_latitude, y_pred)
-print("r2 latitude:", r2)
+y_pred = best_rf1.predict(X_test)
+r2Lat = r2_score(y_test_latitude, y_pred)
+print("r2 latitude:", r2Lat)
 
 # Fit the random search object to the data
 rand_search.fit(X_train, y_train_longitude)
 
 # Create a variable for the best model
-best_rf = rand_search.best_estimator_
+best_rf2 = rand_search.best_estimator_
 
 # Print the best hyperparameters
 print('Best hyperparameters:',  rand_search.best_params_)
 
-y_pred = best_rf.predict(X_test)
-r2 = r2_score(y_test_longitude, y_pred)
-print("r2 longitude:", r2)
+y_pred = best_rf2.predict(X_test)
+r2Long = r2_score(y_test_longitude, y_pred)
+print("r2 longitude:", r2Long)
 
 # %%
 # Cross Validation
-cv_results = cross_val_score(best_rf, X_train, y_train_latitude, cv=5, scoring='r2')
-print("Cross Validation Scores: ", cv_results)
-print("Average CV Score: ", cv_results.mean())
+cv_resultsLat = cross_val_score(best_rf1, X_train, y_train_latitude, cv=5, scoring='r2')
+print("Latitude Cross Validation Scores: ", cv_resultsLat)
+print("Average CV Score: ", cv_resultsLat.mean())
+cv_resultsLong = cross_val_score(best_rf2, X_train, y_train_longitude, cv=5, scoring='r2')
+print("Longitude Cross Validation Scores: ", cv_resultsLong)
+print("Average CV Score: ", cv_resultsLong.mean())
 
 # %% [markdown]
 # ### **Prediction Results**
@@ -531,7 +460,7 @@ plt.show()
 # %%
 # Display Map in UI
 st.pyplot(plt.gcf())
-r2_message = f"""<style>p.a {{color:White; font-size: 15px;}}</style><p class="a">Note: R^2 is {r2_latitude_rf} for latitude and {r2_longitude_rf} for longitude</p>"""
+r2_message = f"""<style>p.a {{color:White; font-size: 15px;}}</style><p class="a">Note: R^2 is {r2Lat} for latitude and {r2Long} for longitude</p>"""
 st.markdown(r2_message, unsafe_allow_html=True)
 
 
