@@ -11,7 +11,7 @@ Solution: Generate a personal access token in github settings > developer settin
 
 Add personal access token to your clone https url link
 
-$ git clone https://(personalaccesstoken)github.com/priyalpatell/MLFinalProject.git
+$ git clone https://(personalaccesstoken)github.com/(your username)/MLFinalProject.git
 
 
 ## Git Command Basics
@@ -48,7 +48,7 @@ $ git push
 
 ## Checking Work
 
-Make a pull request  <img width="145" alt="Screenshot 2024-02-10 at 5 07 29 PM" src="https://github.com/(your username)/MLFinalProject/assets/93696664/22121220-5ea8-4e79-bdeb-b5c979323274">
+Make a pull request  <img width="145" alt="Screenshot 2024-02-10 at 5 07 29 PM" src="https://github.com/priyalpatell/MLFinalProject/assets/93696664/22121220-5ea8-4e79-bdeb-b5c979323274">
 
 From your branch to main branch
 
