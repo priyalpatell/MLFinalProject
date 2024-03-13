@@ -5,7 +5,10 @@ We wanted to predict the when the next UFO sighting will be in California and wh
 ## Our Plan
 https://docs.google.com/document/d/1k4_IpIC8IPfEdhbPy6gOxikQjhcO_cDI7SLa1fZwNWQ/edit?usp=sharing
 
-## Running our UI
+## View Our Code
+https://colab.research.google.com/drive/1c2NqGPVRiR_gml6zA_5OqsQruIxX2qNP?usp=sharing
+
+## Running Our UI
 $ streamlit run project_code_ui.py
 
 Note: takes a bit of time to load results
