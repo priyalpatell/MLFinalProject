@@ -1,6 +1,6 @@
 # MLFinalProject
 ## Our Goal
-We wanted to predict the when the next UFO sighting will be in California and where in California it will take place from latitude and longitude values.
+We wanted to predict the when the next UFO sighting will be in California and where in California it will take place using latitude and longitude values.
 
 ## Our Plan
 https://docs.google.com/document/d/1k4_IpIC8IPfEdhbPy6gOxikQjhcO_cDI7SLa1fZwNWQ/edit?usp=sharing
