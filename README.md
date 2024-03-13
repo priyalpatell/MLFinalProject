@@ -5,7 +5,7 @@ We wanted to predict the when the next UFO sighting will be in California and wh
 ## Our Plan
 https://docs.google.com/document/d/1k4_IpIC8IPfEdhbPy6gOxikQjhcO_cDI7SLa1fZwNWQ/edit?usp=sharing
 
-## Git Clone Remote Respository Error
+### Git Clone Remote Respository Error
 Error: If Git - remote: Repository not found
 
 Solution: Generate a personal access token in github settings > developer settings > personal access tokens
