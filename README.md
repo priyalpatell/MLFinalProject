@@ -38,5 +38,9 @@ Example:
 [demo](https://drive.google.com/file/d/1fa86uAFri8edmpGrIdrGIFHJqRP_1g2J/view?usp=sharing)
 
 ## Our Report
-[ml_report.pdf](https://github.com/priyalpatell/MLFinalProject/files/14608729/ml_report.pdf)
+[report](https://drive.google.com/file/d/1bHFsMzxWzhsGbtO-2YpB6EM6wcdvcd92/view?usp=sharing)
+
+## Our Presentation
+[presentation](https://drive.google.com/file/d/1VNSNKo8vY-6afvXSSsd-bPOjTGC-yLZc/view?usp=sharing)
+
 
