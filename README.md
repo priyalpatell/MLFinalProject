@@ -16,7 +16,7 @@ Note: you will be instructed to log into you google drive account associated wit
 3. open the terminal & cd into the directory with all your downloaded files
 4. type this command into your terminal:
 
-$ streamlit run project_code_ui.py
+  $ streamlit run project_code_ui.py
 
 Note: takes a bit of time to load results
 
