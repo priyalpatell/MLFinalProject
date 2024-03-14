@@ -32,6 +32,13 @@ Example:
 ## Our Demo
 https://drive.google.com/file/d/1fa86uAFri8edmpGrIdrGIFHJqRP_1g2J/view?usp=sharing
 
+## Todo
+- update roadmap
+- update research section
+- add access to google colab
+- upload new code to github
+- double check everything
+
 ### Git Clone Remote Respository Error
 Error: If Git - remote: Repository not found
 
