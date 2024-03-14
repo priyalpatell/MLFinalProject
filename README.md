@@ -2,7 +2,7 @@
 ## Our Goal
 We wanted to predict the when the next UFO sighting will be in California and where in California it will take place using latitude and longitude values.
 
-## The dataset
+## The Dataset
 "scrubbed.csv" was a ufo sightings dataset found on [kaggle](https://www.kaggle.com/datasets/NUFORC/ufo-sightings)
 
 ## View Our Code
