@@ -6,7 +6,7 @@ We wanted to predict the when the next UFO sighting will be in California and wh
 "scrubbed.csv" was a ufo sightings dataset found on [kaggle](https://www.kaggle.com/datasets/NUFORC/ufo-sightings)
 
 ## View Our Code
-Importing Keras tends to crash Jupyter Notebook, so please only view our code from this google colab link which seemed to fix this problem
+Importing Keras tends to crash Jupyter Notebook, so please only view/run our code from this google colab link which seemed to fix this problem
 https://colab.research.google.com/drive/1LkhfuaI1NOLcgpFoup_GG5OF2Zsy6dzQ?usp=sharing
 
 Note: you will be instructed to log into you google drive account associated with your ucdavis email & select ALL for access
@@ -31,19 +31,3 @@ Example:
 
 ## Our Demo
 https://drive.google.com/file/d/1fa86uAFri8edmpGrIdrGIFHJqRP_1g2J/view?usp=sharing
-
-## Todo
-- update roadmap
-- update research section
-- add access to google colab
-- upload new code to github
-- double check everything
-
-### Git Clone Remote Respository Error
-Error: If Git - remote: Repository not found
-
-Solution: Generate a personal access token in github settings > developer settings > personal access tokens
-
-Add personal access token to your clone https url link
-
-$ git clone https://(personalaccesstoken)github.com/(your username)/MLFinalProject.git
