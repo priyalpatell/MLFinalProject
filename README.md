@@ -5,7 +5,7 @@ We wanted to predict the when the next UFO sighting will be in California and wh
 ## The Dataset
 "scrubbed.csv" was a ufo sightings dataset found on [kaggle](https://www.kaggle.com/datasets/NUFORC/ufo-sightings)
 
-## View Our Code
+## View/Run Our Code
 Importing Keras tends to crash Jupyter Notebook, so please only view/run our code from this google colab link which seemed to fix this problem
 https://colab.research.google.com/drive/1LkhfuaI1NOLcgpFoup_GG5OF2Zsy6dzQ?usp=sharing
 
