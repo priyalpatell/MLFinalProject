@@ -31,3 +31,7 @@ Example:
 
 ## Our Demo
 https://drive.google.com/file/d/1fa86uAFri8edmpGrIdrGIFHJqRP_1g2J/view?usp=sharing
+
+## Our Report
+[ml_report.pdf](https://github.com/priyalpatell/MLFinalProject/files/14608729/ml_report.pdf)
+
