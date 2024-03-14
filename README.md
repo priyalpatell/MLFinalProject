@@ -11,6 +11,10 @@ Importing Keras tends to crash Jupyter Notebook, so please only view/run our cod
 
 Note: you will be instructed to log into you google drive account associated with your ucdavis email & select ALL for access
 ## Running Our UI
+1. download "project_code_ui.py", "scrubbed.csv", and the folder "cb_2018_us_state_500k"
+2. place these items all in the same local directory
+3. open the terminal & cd into the directory with all your downloaded files
+To run type this command into your terminal:
 $ streamlit run project_code_ui.py
 
 Note: takes a bit of time to load results
