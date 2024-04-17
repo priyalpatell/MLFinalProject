@@ -1,9 +1,19 @@
 # MLFinalProject
-## Our Goal
-We wanted to predict the when the next UFO sighting will be in California and where in California it will take place using latitude and longitude values.
 
 ## The Dataset
 "scrubbed.csv" was a ufo sightings dataset found on [kaggle](https://www.kaggle.com/datasets/NUFORC/ufo-sightings)
+
+## Our Goal
+We wanted to predict the when the next UFO sighting will be in California and where in California it will take place using latitude and longitude values.
+
+## Our Demo
+[demo](https://drive.google.com/file/d/1fa86uAFri8edmpGrIdrGIFHJqRP_1g2J/view?usp=sharing)
+
+## Our Report
+[report](https://drive.google.com/file/d/1A0O_h9IAcrCrInyB1NY4Xnid5Ap3uaRs/view?usp=sharing)
+
+## Our Presentation
+[presentation](https://drive.google.com/file/d/1VNSNKo8vY-6afvXSSsd-bPOjTGC-yLZc/view?usp=sharing)
 
 ## View/Run Our Code
 Importing Keras tends to crash Jupyter Notebook, so please only view/run our code from this [google colab link](https://colab.research.google.com/drive/1LkhfuaI1NOLcgpFoup_GG5OF2Zsy6dzQ?usp=sharing) which seemed to fix this problem
@@ -33,14 +43,5 @@ Example:
     question 1 ~16 minutes
     
     question 2 ~9 minutes
-
-## Our Demo
-[demo](https://drive.google.com/file/d/1fa86uAFri8edmpGrIdrGIFHJqRP_1g2J/view?usp=sharing)
-
-## Our Report
-[report](https://drive.google.com/file/d/1A0O_h9IAcrCrInyB1NY4Xnid5Ap3uaRs/view?usp=sharing)
-
-## Our Presentation
-[presentation](https://drive.google.com/file/d/1VNSNKo8vY-6afvXSSsd-bPOjTGC-yLZc/view?usp=sharing)
 
 
